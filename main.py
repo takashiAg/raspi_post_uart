@@ -5,7 +5,7 @@ import urllib
 import threading
 
 # POSTするURL
-url = "http://html.takashia.xyz/post.php"
+url = "http://html.takashia.xyz/post_twelite.php"
 
 # シリアルポートを指定
 serport = "/dev/serial0"
@@ -28,7 +28,6 @@ def post(arg):
         data = urllib.urlencode(params)
         urllib.urlopen(url, data)
         print("I send a message to " + url + "\nmessage:" + arg)
-        return 0
     except:
         print("I try to send a message but missed it")
         return 0
