@@ -8,7 +8,7 @@ import threading
 url = "http://html.takashia.xyz/post.php"
 
 # シリアルポートを指定
-serport = "/dev/ttyAMA0"
+serport = "/dev/serial0"
 
 
 def post(arg):
